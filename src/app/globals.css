@@ -2,32 +2,140 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.card{
+  display: flex;
+width: 120px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 28px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.img{
+  height: 150px;
+align-self: stretch;
+border-radius: 10px;
+background: lightgray 50%, cover no-repeat;
+}
+
+.cardItems{
+  height: 76px;
+align-self: stretch;
+}
+
+.heading{
+  color: #000;
+/* font-family: "Sansita Swashed"; */
+font-size: 16px;
+font-style: normal;
+font-weight: 800;
+line-height: 100%; /* 16px */
+}
+
+.name{
+  color: #222;
+font-family: Inter;
+/* font-size: 10px; */
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 10px */
+}
+
+.cate{
+  color: #3C3C3C;
+ font-family: "Cormorant Upright";
+/* font-size: 10px; */
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.btnn{
+  color: #3C3C3C;
+font-family: "Cormorant Upright";
+font-size: 10px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.btnText{
+  color: #FFF;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 12px */
+}
+
+.btnn{
+  display: flex;
+width: 90px;
+height: 32px;
+padding: 10px 20px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 4px;
+background-color: #000;
+color: #FFF;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 12px */
+}
+
+
+.btnText{
+  color: #FFF;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 12px */
+}
+
+
+.nav{
+  color: #3C3C3C;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+  /* line-height: normal; */
+   /* width: 112px;  */
+  /* height: 36px;  */
+}
+
+.nav:hover{
+  color: white;
+  background-color: #0038FF;
+  display: flex;
+  /* width: 112px;  */
+  /* height: 60px;  */
+  align-items: center;
+  justify-content: center;
+  gap: 10;
+  cursor: pointer;
+  border-radius: 33px;
+  transition: all 0.3s ease; 
+} 
+
+.nav-item {
+  @apply text-gray-800 hover:text-gray-600 transition duration-300;
 }
