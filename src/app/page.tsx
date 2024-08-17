@@ -65,13 +65,17 @@
 
 import Navbar from '@/components/Navbar'
 import ShoppingCart from '@/components/ShoppingCart'
+import { ShoppingCartProvider } from '@/context/ShoppingCartContext'
 import React from 'react'
 
 const page = () => {
   return (
     <div>
+      <ShoppingCartProvider>
       <Navbar />
       <ShoppingCart />
+      </ShoppingCartProvider>
+      
     </div>
   )
 }
