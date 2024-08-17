@@ -2,6 +2,7 @@
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { ShoppingBag } from 'lucide-react';
 const nav = [
   { id: 1, name: "Art", href:"/pages/art" },
   { id: 2, name: "Portraits" , href:"/pages/portraits" },
@@ -17,7 +18,7 @@ const Navbar = () => {
 
   return (
     <div className="relative">
-      <div className="flex items-center justify-between  p-4 pl-20  lg:pl-20 lg:p-10">
+      <div className=" flex items-center justify-between  p-4 pl-20  lg:pl-20 lg:p-10">
         {/* <div className=" flex flex-row lg:hidden">
           <p>Exhibitions</p>
           <p>Artist</p>
@@ -64,6 +65,18 @@ const Navbar = () => {
             </Link>
           ))}
         </nav>
+        <button style={{width: "3rem", height: "3rem", position: "relative"}}>
+          <ShoppingBag className='size-[40px]' />
+          <div className='rounded-full bg-red-600 flex justify-center align-middle ' style={{color: "white",
+            width: "1.5rem", height: "1.5rem",
+            position: "absolute",
+            bottom: 0,
+            right: 0,
+            transform: "translate(25%, 25%)"
+          }}>
+            3
+          </div>
+        </button>
       </div>
 
       {menuOpen && (
@@ -75,6 +88,7 @@ const Navbar = () => {
           ))}
         </nav>
       )}
+     
     </div>
   );
 };

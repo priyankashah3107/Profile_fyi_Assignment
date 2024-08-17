@@ -82,13 +82,13 @@ line-height: 100%; /* 12px */
 
 .btnn{
   display: flex;
-width: 90px;
-height: 32px;
+/* width: 90px;
+height: 32px; */
 padding: 10px 20px;
 justify-content: center;
 align-items: center;
 gap: 10px;
-flex-shrink: 0;
+/* flex-shrink: 0; */
 border-radius: 4px;
 background-color: #000;
 color: #FFF;
