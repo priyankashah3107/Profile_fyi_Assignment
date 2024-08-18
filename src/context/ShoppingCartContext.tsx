@@ -1,4 +1,5 @@
-"use client"
+// "use client"
+
 import SideCart from "@/components/SideCart";
 import { createContext, ReactNode, useContext, useState } from "react";
 
@@ -92,7 +93,7 @@ export function ShoppingCartProvider({children}: ShoppingCartProviderProps) {
 
       }}>
         {children}
-        <SideCart  />
+        <SideCart  isOpen={isOpen}/>
       </shoppingCartContext.Provider>
       </>
     ) 

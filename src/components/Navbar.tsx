@@ -4,14 +4,19 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { ShoppingBag } from 'lucide-react';
 import { useShoppingCart } from '@/context/ShoppingCartContext';
-const nav = [
+
+interface NavItem {
+  id: number;
+  name: string;
+  href: string;
+}
+
+const nav: NavItem[] = [
   { id: 1, name: "Art", href:"/pages/art" },
   { id: 2, name: "Portraits" , href:"/pages/portraits" },
   { id: 3, name: "Painting" , href:"/pages/painting"},
   { id: 4, name: "Photography" , href:"/pages/photography" },
-//   { id: 5, name: "Sculptures" , href:"pages/scluptures"},
-//   { id: 6, name: "Fashion Design" , href:"/pages/fashion" },
-//   { id: 7, name: "Digital Art" , href:"/pages/digital" }
+
 ];
 
 const Navbar = () => {

@@ -62,6 +62,7 @@
 // }
 
 // export default ShoppingCart;
+"use client"
 
 import Navbar from '@/components/Navbar'
 import ShoppingCart from '@/components/ShoppingCart'

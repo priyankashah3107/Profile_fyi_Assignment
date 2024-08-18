@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React from 'react';
 import shoppingcart from "../../public/shoppingcart/shoping";
 import Image from 'next/image';
